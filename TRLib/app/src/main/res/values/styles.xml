@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShadowStyle">
+        <item name="android:shadowColor">#6e6e6e</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="loading_small" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@anim/loading</item>
+        <item name="android:layout_width">21dip</item>
+        <item name="android:layout_height">21dip</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="DeepStyle">
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">-0.5</item>
+        <item name="android:shadowDy">-0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+    <style name="OrangeStyle">
+        <item name="android:shadowColor">#742061</item>
+        <item name="android:shadowDx">-0.5</item>
+        <item name="android:shadowDy">-0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="GreenStyle">
+        <item name="android:shadowColor">#003300</item>
+        <item name="android:shadowDx">-0.5</item>
+        <item name="android:shadowDy">-0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="HomeButtonStytle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">10dip</item>
+    </style>
+
+    <style name="FileViewToolbarButtonStytle">
+        <item name="android:padding">10dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="FileViewOperationButtonStytle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dip</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/operation_button_background</item>
+    </style>
+
+    <style name="FileViewOperationMoveButtonStytle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dip</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+        <item name="android:background">@drawable/remote_button_bg</item>
+    </style>
+
+    <style name="CategoryButtonStyle">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="CategoryButtonIconStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginBottom">3px</item>
+    </style>
+    <style name="CategoryButtonTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">19px</item>
+        <item name="android:textColor">#111111</item>
+    </style>
+    <style name="CategoryButtonCountTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">15px</item>
+        <item name="android:textColor">#A6A6A6</item>
+    </style>
+
+    <style name="InformationItemTitleStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">60dip</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14dip</item>
+    </style>
+
+    <style name="InformationItemContentStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14dip</item>
+        <item name="android:layout_marginLeft">5dip</item>
+    </style>
+    <style name="InformationItemStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:layout_marginBottom">5dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="InformationTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textSize">12dip</item>
+        <item name="android:drawablePadding">5dip</item>
+    </style>
+    <style name="CategoryLegendStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:drawablePadding">5px</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textSize">10dip</item>
+        <item name="android:layout_marginLeft">2dip</item>
+    </style>
+    <style name="CategoryLegendStyleLand">
+        <item name="android:layout_height">0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:drawablePadding">5px</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textSize">10dip</item>
+        <item name="android:layout_marginLeft">2dip</item>
+    </style>
+    <style name="InformationDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/popup_bg</item>
+    </style>
+    <style name="ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.ActionButton</item>
+    </style>
+
+    <style name="TextAppearance" parent="android:TextAppearance">
+    </style>
+
+    <style name="TextAppearance.ActionButton">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="BottomButton" >
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmallInverse</item>
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:shadowColor">#80ffffff</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/btn_bottom</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="BottomButton.Left">
+    </style>
+
+    <style name="BottomButton.Right">
+        <item name="android:background">@drawable/btn_bottom_last</item>
+    </style>
+
+    <style name="BottomButtonBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:background">@drawable/bottom_button_bar</item>
+    </style>
+
+    <style name="Theme.HalfTranslucent" parent="@android:style/Theme.Translucent">
+        <item name="android:windowBackground">@color/half_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Translucent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="widget_listview">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:listSelector">@drawable/listview_item_selector</item>
+        <item name="android:divider">@drawable/listview_divider_line</item>
+        <item name="android:dividerHeight">1.0dip</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollingCache">false</item>
+    </style>
+
+    <style name="Animation" />
+    <style name="Animation.Translucent" parent="@style/Animation">
+        <item name="android:windowEnterAnimation">@anim/translucent_zoom_out</item>
+        <item name="android:windowExitAnimation">@anim/translucent_zoom_exit</item>
+    </style>
+
+    <style name="Animation.SlideTop" parent="@style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+    <style name="Theme.SlideTop" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/Animation.SlideTop</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+
+
+    <!-- GreenDroid UI Tool -->
+    <style name="GreenDroid" />
+    <style name="GreenDroid.Widget" />
+
+    <style name="GreenDroid.Widget.QuickAction" />
+    <style name="GreenDroid.Widget.QuickAction.Bar" />
+    <style name="GreenDroid.Widget.QuickAction.Grid">
+        <item name="android:padding">7dp</item>
+        <item name="android:listSelector">@drawable/gd_quick_action_grid_selector</item>
+        <item name="android:background">@drawable/gd_quick_action_grid_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fadingEdgeLength">0dp</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:verticalSpacing">7dp</item>
+        <item name="android:numColumns">3</item>
+    </style>
+
+    <style name="GreenDroid.Widget.QuickAction.Item">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#333</item>
+    </style>
+    <style name="GreenDroid.Widget.QuickAction.Bar.Item" parent="@style/GreenDroid.Widget.QuickAction.Item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">80dp</item>
+        <item name="android:background">@drawable/gd_quick_action_bar_item</item>
+    </style>
+    <style name="GreenDroid.Widget.QuickAction.Grid.Item" parent="@style/GreenDroid.Widget.QuickAction.Item">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">65dp</item>
+    </style>
+
+    <!-- GreenDroid PopDownMenu -->
+    <style name="GreenDroid.Animation" />
+
+    <style name="GreenDroid.Animation.PopDown" />
+    <style name="GreenDroid.Animation.PopDown.Left">
+        <item name="@android:windowEnterAnimation">@anim/gd_grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/gd_shrink_from_bottomright_to_topleft</item>
+    </style>
+    <style name="GreenDroid.Animation.PopDown.Right">
+        <item name="@android:windowEnterAnimation">@anim/gd_grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/gd_shrink_from_bottomleft_to_topright</item>
+    </style>
+    <style name="GreenDroid.Animation.PopDown.Center">
+        <item name="@android:windowEnterAnimation">@anim/gd_grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/gd_shrink_from_bottom</item>
+    </style>
+
+    <style name="GreenDroid.Animation.PopUp" />
+    <style name="GreenDroid.Animation.PopUp.Left">
+        <item name="@android:windowEnterAnimation">@anim/gd_grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/gd_shrink_from_topright_to_bottomleft</item>
+    </style>
+    <style name="GreenDroid.Animation.PopUp.Right">
+        <item name="@android:windowEnterAnimation">@anim/gd_grow_from_bottomright_to_topleft</item>
+        <item name="@android:windowExitAnimation">@anim/gd_shrink_from_topleft_to_bottomright</item>
+    </style>
+    <style name="GreenDroid.Animation.PopUp.Center">
+        <item name="@android:windowEnterAnimation">@anim/gd_grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/gd_shrink_from_top</item>
+    </style>
+
+
+
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/full_transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+
+
+</resources>

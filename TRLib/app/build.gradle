@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.2'
+    defaultConfig {
+        applicationId 'trlabs.trscanner'
+        versionCode 1
+        versionName '1.0'
+        minSdkVersion 13
+        targetSdkVersion 16
+
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+
+    buildTypes {
+        release {
+            runProguard false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:support-v13:21.0.2'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile project(':libraries:opencv')
+    compile project(':libraries:dialog')
+    compile files('libs/acra-4.4.0.jar')
+    compile files('libs/mpandroidchartlibrary-2-0-7.jar')
+    compile project(':libraries:caldroid')
+    compile files('libs/apache-mime4j-0.3.jar')
+    compile files('libs/httpmime-4.2.4.jar')
+}
+

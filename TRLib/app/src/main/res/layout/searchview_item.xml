@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/searchcontent_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:text="@string/search_content"
+        android:textColor="@color/deep_blue"/>
+
+    <TextView
+        android:id="@+id/search_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/searchcontent_label" />
+
+    <TextView
+        android:id="@+id/searchdate_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:textColor="@color/deep_blue"
+        android:layout_below="@+id/searchcontent_label"
+        android:text="@string/search_date" />
+
+        <TextView
+        android:id="@+id/searchdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_content"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/searchdate_label" />
+
+</RelativeLayout>

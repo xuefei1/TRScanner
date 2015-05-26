@@ -1,0 +1,7 @@
+<!-- http://droid-blog.net/2012/05/15/two-simple-ways-to-make-your-users-aware-of-incorrect-input/ -->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXDelta="0%"
+    android:toXDelta="5%"
+    android:duration="1000"
+    android:interpolator="@anim/cycle"
+/>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:id="@+id/menu_dialog_layout">
+
+
+
+    <LinearLayout
+        android:id="@+id/menu_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum = "2"
+        android:layout_marginBottom="100dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_shutdown"
+                android:background="@drawable/user_exit"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="120dp"
+                android:text="@string/user_exit"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_18"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_logout"
+                android:background="@drawable/user_logout"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/user_logout"
+                android:textStyle="bold"
+                android:paddingTop="120dp"
+                android:textSize="@dimen/text_size_18"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+include ':app'
+include ':libraries:dialog'
+include ':libraries:opencv'
+include ':libraries:caldroid'
+
+
+

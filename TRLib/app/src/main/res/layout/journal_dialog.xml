@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corner"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textSize = "@dimen/text_size_20"
+        android:text="Journal"
+        android:textColor="@color/deep_blue"
+        android:background="@drawable/journal_label"
+        android:id="@+id/journal_textView"
+        android:gravity="center|center_vertical"
+     />
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:id="@+id/journal_close_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/login_scrollview"
+            android:layout_alignTop="@+id/login_scrollview"
+            android:background="@drawable/login_close_button"  />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/caldroid_white">
+
+        <EditText
+            android:id="@+id/journal_textEdit"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginBottom="0dp"
+            android:ems="10"
+            android:maxLength="256"
+            android:hint="@string/journal_enter_dialog"
+            android:gravity="left|top">
+            <requestFocus/>
+        </EditText>
+
+        <TextView
+            android:id="@+id/journal_wordcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize = "@dimen/text_size_16"
+            android:layout_marginRight="20dp"
+            android:text="count"
+            android:textColor="@color/deep_blue"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/journal_textEdit"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

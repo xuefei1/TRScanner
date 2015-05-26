@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:id="@+id/user_page"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:paddingBottom="60dp">
+
+                <RelativeLayout
+                    android:id="@+id/layoutTop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/user_background">
+
+
+
+                    <ImageView
+                        android:id="@+id/location_icon"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/location_icon" />
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_toRightOf="@id/location_icon"
+                        android:gravity="top|left"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_14"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/pic_temperature"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/temperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_14"
+                        android:layout_below="@id/pic_temperature"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/patient_name"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_20"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutBottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/layoutTop"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:id="@+id/info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <trlabs.trscanner.utils.HorizontalListView
+                        android:id="@+id/info_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="55dp"/>
+
+                    <TextView
+                        android:id="@+id/text_journal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/info_list"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_corner"
+                        android:visibility="gone" />
+
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/chart1"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_below="@+id/text_journal"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rectangle" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/text_selected_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/layoutTop"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black" />
+
+
+                <!-- https://github.com/lopspower/CircularImageView -->
+                <trlabs.trscanner.utils.CircularImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_above="@+id/layoutBottom"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="-50dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/qa_user" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/operation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/half_transparent"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/button_operation_profile"
+                style="@style/FileViewOperationButtonStytle"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/operation_profile"
+                android:text="@string/operation_profile"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/button_operation_copy"
+                style="@style/FileViewOperationButtonStytle"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/operation_button_copy"
+                android:text="@string/operation_copy"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/button_operation_more"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:src="@drawable/user_operation_more" />
+
+            <TextView
+                android:id="@+id/button_operation_send"
+                style="@style/FileViewOperationButtonStytle"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/operation_button_send"
+                android:text="@string/operation_send"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/button_operation_search"
+                style="@style/FileViewOperationButtonStytle"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/operation_search"
+                android:text="@string/operation_search"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@id/operation_bar"
+            android:background="@color/half_transparent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <ProgressBar
+                    android:id="@+id/upload_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/upload_progress"
+                    android:text="Uploading..."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!--  before login  -->
+    <LinearLayout
+        android:id="@+id/about_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="@string/trtech" />
+
+            <TextView
+                android:id="@+id/trtech_bio"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rectangle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:padding="15dp"
+                android:singleLine="false"
+                android:text="@string/trtech_bio"
+                android:textSize="12sp" />
+
+
+
+            <ImageView
+                android:id="@+id/trtech_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5sp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/trtech_claim"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/trtech_claim"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback_title"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_14"
+                android:background="@drawable/rounded_corner"
+                android:textColor="@color/blue"
+                />
+        </LinearLayout>
+
+
+        <trlabs.trscanner.trtabs.config.BannerView
+            xmlns:myattr="http://schemas.android.com/apk/res/trlabs.trscanner"
+            android:id="@+id/slidingLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:visibility="visible"
+            myattr:auto_play="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/banner1" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/banner2" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/banner3" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/banner4" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/banner5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="60dip"
+                android:layout_height="20dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dip"
+                android:orientation="horizontal">
+
+                </LinearLayout>
+        </trlabs.trscanner.trtabs.config.BannerView>
+    </LinearLayout>
+
+</RelativeLayout>

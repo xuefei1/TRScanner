@@ -1,0 +1,3 @@
+Note when use cvtcolor for color space transformation
+
+http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#cvtcolor">org.opencv.imgproc.Imgproc.cvtColor

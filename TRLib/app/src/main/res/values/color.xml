@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <color name="yellow">#FFF000</color>
+    <color name="gray">#A6A6A0</color>
+    <color name="orange">#ff9900</color>
+    <color name="deepcolor">#faaa5f</color>
+    <color name="shadowcolor">#333333</color>
+    <color name="naming">#ABABAB</color>
+    <color name="red">#FF0000</color>
+    <color name="cal_red1">#ffffd47c</color>
+    <color name="cal_red2">#ffffba4a</color>
+    <color name="cal_red3">#ffff7f29</color>
+    <color name="cal_red4">#ffff4c25</color>
+    <color name="cal_red5">#ffff0118</color>
+    <color name="cal_red6">#ffa3000b</color>
+    <color name="white">#ffffffff</color>
+    <color name="light_blue">#ff96d2ff</color>
+    <color name="blue">#ff31acff</color>
+    <color name="deep_blue">#ff2763a3</color>
+    <color name="background">#272727</color>
+    <color name="orange_yellow">#9b9ba0</color>
+    <color name="black">#000000</color>
+    <color name="GrayLight">#eeeeee</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="half_transparent">#50000000</color>
+    <color name="half_transparent_light">#aaFFFFFF</color>
+
+
+    <drawable name="semi_black">#80000000</drawable>
+    <color name="listitem_transparent">#00000000</color>
+    <color name="listitem_black">#ff000000</color>
+    <color name="remote_connect_text">#FFe78018</color>
+    <color name="remote_disconnect_text">#FF901821</color>
+	
+	<color name="shadow">#555555</color>
+    <color name="title">#777777</color>
+
+</resources>
